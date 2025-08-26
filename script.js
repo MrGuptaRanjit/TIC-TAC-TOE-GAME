@@ -23,6 +23,7 @@ const winPatterns = [
 
 const resetGame = () => {
     turn0 = true;
+    count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
 }
@@ -94,5 +95,6 @@ const checkWinner = () => {
 
 newGameBtn.addEventListener("click" , resetGame);
 resetBtn.addEventListener("click" , resetGame);
+
 
 
