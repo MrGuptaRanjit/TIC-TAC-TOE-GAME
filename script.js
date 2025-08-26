@@ -87,14 +87,17 @@ const checkWinner = () => {
                 console.log("Winner", pos1val);
                 disableBoxes();
                 showWinner(pos1val);
+                return true;
             }
         }
     }
+    return false;
 };
 
 
 newGameBtn.addEventListener("click" , resetGame);
 resetBtn.addEventListener("click" , resetGame);
+
 
 
 
