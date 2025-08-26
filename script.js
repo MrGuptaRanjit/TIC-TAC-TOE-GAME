@@ -86,7 +86,6 @@ const checkWinner = () => {
                 console.log("Winner", pos1val);
                 disableBoxes();
                 showWinner(pos1val);
-                winnerFound = true;
             }
         }
     }
@@ -95,4 +94,5 @@ const checkWinner = () => {
 
 newGameBtn.addEventListener("click" , resetGame);
 resetBtn.addEventListener("click" , resetGame);
+
 
